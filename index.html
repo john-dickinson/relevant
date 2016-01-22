@@ -5,9 +5,11 @@
   <title>Relevant BCN - Home</title>
   <link rel="stylesheet" href="css/frontpage_style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
@@ -28,8 +30,61 @@
       </ul>
     </nav>
   </header>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+
+  <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="container-fluid" id="featured">
+          <h1 class="headline_large">News: 2016 Coachella Lineup Announced</h1>
+          <img src="media/crowd.png" class="featured_img" alt="">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="container-fluid" id="featured">
+          <h1 class="headline_large">News: 2016 Coachella Lineup Announced</h1>
+          <img src="media/crowd.png" class="featured_img" alt="">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="container-fluid" id="featured">
+          <h1 class="headline_large">News: 2016 Coachella Lineup Announced</h1>
+          <img src="media/crowd.png" class="featured_img" alt="">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="container-fluid" id="featured">
+          <h1 class="headline_large">News: 2016 Coachella Lineup Announced</h1>
+          <img src="media/crowd.png" class="featured_img" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+</div>
 
   <div class="container-fluid">
+
+
     <div class="row">
       <div class="col-md-8">
         <h2>Interviews</h2>
@@ -90,51 +145,51 @@
       </div>
       <div class="col-md-4">
         <!-- <div class="row">
-          <h2>Calendar</h2>
-          <img src="media/placeholder.png" alt="">
-        </div> -->
-        <div class="row">
-          <h2>Advertisement</h2>
-          <img src="media/ad.gif" alt="">
-        </div>
-        <div class="row">
-          <h2>Most Read</h2>
-          <img src="media/placeholder.png" alt="">
-        </div>
+        <h2>Calendar</h2>
+        <img src="media/placeholder.png" alt="">
+      </div> -->
+      <div class="row">
+        <h2>Advertisement</h2>
+        <img src="media/ad.gif" alt="">
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <h3><a href="#">Style</a></h3>
-        <img src="media/interview.png" alt="" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="read_more"><a href="#">Read more</a></p>
-      </div>
-      <div class="col-md-3">
-        <h3><a href="#">Events</a></h3>
-        <img src="media/interview.png" alt="" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="read_more"><a href="#">Read more</a></p>
-      </div>
-      <div class="col-md-3">
-        <h3><a href="#">Other Articles</a></h3>
-        <img src="media/interview.png" alt="" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="read_more"><a href="#">Read more</a></p>
-      </div>
-      <div class="col-md-3">
-        <h3><a href="#">Gallery</a></h3>
-        <img src="media/interview.png" alt="" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="read_more"><a href="#">Read more</a></p>
+      <div class="row">
+        <h2>Most Read</h2>
+        <img src="media/placeholder.png" alt="">
       </div>
     </div>
   </div>
-  <footer class="footer">
-        <div class="container">
-          <p class="text-muted">Place sticky footer content here.</p>
-        </div>
-      </footer>
+  <div class="row">
+    <div class="col-md-3">
+      <h3><a href="#">Style</a></h3>
+      <img src="media/interview.png" alt="" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="read_more"><a href="#">Read more</a></p>
+    </div>
+    <div class="col-md-3">
+      <h3><a href="#">Events</a></h3>
+      <img src="media/interview.png" alt="" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="read_more"><a href="#">Read more</a></p>
+    </div>
+    <div class="col-md-3">
+      <h3><a href="#">Other Articles</a></h3>
+      <img src="media/interview.png" alt="" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="read_more"><a href="#">Read more</a></p>
+    </div>
+    <div class="col-md-3">
+      <h3><a href="#">Gallery</a></h3>
+      <img src="media/interview.png" alt="" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="read_more"><a href="#">Read more</a></p>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Place sticky footer content here.</p>
+  </div>
+</footer>
 
 </body>
 </html>

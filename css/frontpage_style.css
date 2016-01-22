@@ -11,19 +11,38 @@ body {
   position: relative;
 }
 
+
 header {
-  margin-bottom: 25px;
+  margin-bottom: 150px;
   /*width: 100%;*/
 }
 
 nav {
-  background-color: white;
-  /*z-index: 50000;*/
+  background-color: #F1F1F1;
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 5000;
+  top: 0;
+  margin-bottom:100px;
   display: inline-block;
   border-bottom: 2px solid rgb(117,196,145) !important;
   -webkit-box-shadow: 0px 6px 9px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 6px 9px -4px rgba(0,0,0,0.75);
   box-shadow: 0px 6px 9px -4px rgba(0,0,0,0.75);
+}
+
+.carousel-control {
+  background-image: none !important;
+}
+
+.headline_large {
+  font-family: 'Slabo 27px', serif !important;
+  text-align: center !important;
+  font-size: 65px;
+  position: absolute;
+  width: 88%;
+  margin-top: 12%;
+  z-index: 1;
 }
 
 .pull-left{
@@ -33,108 +52,121 @@ nav {
 
 header img {
   display: block;
-padding-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.featured_img {
+  opacity: 0.4;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+}
+
+.featured_img:hover {
+    -webkit-filter: blur(2px) !important;
 }
 
 img{
--webkit-transition: all 500ms ease;
--o-transition: all 500ms ease;
-transition: all 500ms ease;}
-
-img:hover {
-  opacity: 0.4;
-  cursor: pointer;
-}
-
-nav li {
-  display: inline-block;
-  margin: 0 10px 10px 10px;
-  font-size: 18px;
-}
-
-.pull-right {
-  display: inline;
-  margin-right: 50px;
-  margin-top: -10px;
-  float: right;
-}
-
-.read_more {
-  float: right;
-  margin-right: 5px;
-}
-
-a {
-  color: black !important;
-  text-decoration: none !important;
-  /*-webkit-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease;*/
-}
+  transition: all 500ms ease;}
 
-a:hover {
-  border-bottom: 2px solid rgb(117,196,145);
-  text-decoration: none;
-  color: pink;
-}
+  img:hover {
+    opacity: 0.4;
+    cursor: pointer;
+  }
 
-.body_wrap {
-  position: relative;
-}
+  nav li {
+    display: inline-block;
+    margin: 0 10px 10px 10px;
+    font-size: 18px;
+  }
 
-.nav_logo {
-margin:0 0 0 50px;
-}
+  .pull-right {
+    display: inline;
+    margin-right: 50px;
+    margin-top: -10px;
+    float: right;
+  }
 
-.row {
-  margin: 0 10px 20px 10px !important;
-  /*border: 1px solid blue;*/
-}
+  .read_more {
+    float: right;
+    margin-right: 5px;
+  }
 
-.container-fluid {
-  width: 90%;
+  a {
+    color: black !important;
+    text-decoration: none !important;
+    /*-webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;*/
+  }
 
-}
+  nav a:hover {
+    border-bottom: 2px solid rgb(117,196,145);
+    text-decoration: none;
+  }
 
-.col-md-4 {
-  margin-top: 63px;
+  .body_wrap {
+    position: relative;
+  }
+
+  .nav_logo {
+    margin:0 0 0 50px;
+  }
+
+  .row {
+    margin: 0 10px 20px 10px !important;
+    /*border: 1px solid blue;*/
+  }
+
+  .container-fluid {
+    width: 90%;
+
+  }
+
+  .col-md-4 {
+    margin-top: 63px;
     background-color: white;
+    border-top: 2px solid rgb(117,196,145);
     -webkit-box-shadow: 0px 6px 9px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 6px 9px -4px rgba(0,0,0,0.75);
     box-shadow: 0px 6px 9px -4px rgba(0,0,0,0.75);
-}
+  }
 
-.col-md-3 {
+  .col-md-3 {
     background-color: white;
+    border-top: 2px solid rgb(117,196,145);
     -webkit-box-shadow: 0px 6px 9px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 6px 9px -4px rgba(0,0,0,0.75);
     box-shadow: 0px 6px 9px -4px rgba(0,0,0,0.75);
-}
+  }
 
-.col-md-4 h2 {
-  text-align: center;
-}
+  .col-md-4 h2 {
+    text-align: center;
+  }
 
-.col-md-4 img {
-  position: relative;
-  width: 75%;
-  margin: 0 auto 20px auto;
-  display: block;
-}
+  .col-md-4 img {
+    position: relative;
+    width: 75%;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
 
-.col-md-3 h3 {
-  text-align: center;
-}
+  .col-md-3 h3 {
+    text-align: center;
+  }
 
-.col-md-3 img {
-  position: relative;
-  width:100%;
-}
+  .col-md-3 img {
+    position: relative;
+    width:100%;
+  }
 
-.footer {
-position: absolute;
-bottom: -50;
-width: 100%;
-height: 150px;
-background-color: #464646;
-}
+  .footer {
+    position: absolute;
+    bottom: -50;
+    width: 100%;
+    height: 150px;
+    background-color: #464646;
+  }
